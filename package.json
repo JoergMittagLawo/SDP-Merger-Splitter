@@ -1,0 +1,40 @@
+{
+  "name": "@joergmittaglawo/sdp-merger-splitter",
+  "version": "0.0.0-alpha.0",
+  "description": "A little EmBER+ Provider that can merge and split SMPTE ST 2110-20, SMPTE ST 2110-30/-31, and SMPTE ST 2110-40 SDPs",
+  "bin": "lib/server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "npm run ts",
+    "clean": "rm -rf lib",
+    "ts": "npx tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com:JoergMittagLawo/CPC-Torturer.git"
+  },
+  "keywords": [
+    "lawo",
+    "vsm",
+    "vsmstudio",
+    "cpc"
+  ],
+  "author": "Jörg Mittag (Lawo) <joerg.mittag@lawo.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.10.2",
+    "@types/sdp-transform": "^2.4.5",
+    "typescript": "^4.4.3",
+    "typescript-eslint-language-service": "^4.1.5"
+  },
+  "dependencies": {
+    "emberplus-connection": "0.0.4",
+    "sdp-transform": "^2.14.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
